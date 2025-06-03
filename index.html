@@ -18,7 +18,7 @@
     <header>
         <div class="header-info">
             <div data-aos="fade-up" class="infoimportante">
-                <img src="./img/face.png" alt="">
+                <img src="./img/face.png" alt=""> 
                 <a class="boton" target="_blank"  href="https://calendar.app.google/ZyDgxswNMvR3QUfLA">AGENDAR</a>    
             </div>
        </div>
@@ -68,6 +68,21 @@
             <a  data-aos="fade-up" class="boton" target="_blank"  href="https://wa.link/c0kuvv">CONFIRMAR</a>    
         </div>
   </main>
+  <div class="caja">
+    <div  class="ubicacion-bloque dos" >
+      
+        <p  data-aos="fade-up" >
+          TU PRESENCIA ES EL MEJOR REGALO QUE PODEMOS RECIBIR. <br>
+
+          PERO SI ADEMÁS QUERÉS TENER UN DETALLE ESPECIAL CON EMILIA, <br> PODÉS CONTRIBUIR CON SU ALCANCÍA VIRTUAL <br> O TRAER UN REGALITO Y DEJARLO EN EL BAÚL DE REGALOS <br> QUE ESTARÁ ESPERÁNDOLOS ESE DÍA.  <br>
+          <br>  <a  data-aos="fade-up"  class="boton3" onclick="copyToClipboard('valientebelen.mp')">ALIAS</a> <br>
+      <br>  
+        <p  data-aos="fade-up"> HACÉ CLIC PARA COPIAR LOS DATOS DE LA CUENTA.<br>
+          A NOMBRE DE: BELÉN DAIANA VALIENTE</p>
+    </div>
+</div>
+
+
   <div class="galeria">
     <img class="f1" src="./img/6.png" alt="foto">
     <img class="f4" src="./img/6.png" alt="foto">
@@ -126,6 +141,18 @@
      <script>
       AOS.init();
   </script>
+   <script>
+
+    function copyToClipboard(text) {
+       const tempInput = document.createElement("input");
+       document.body.appendChild(tempInput);
+       tempInput.value = text;
+       tempInput.select();
+       document.execCommand("copy");
+       document.body.removeChild(tempInput);
+       alert(`Copiaste los datos de cuenta "${text}" a tu portapapeles`);
+     }
+   </script>
      <script>
       // Espera a que se cargue el DOM
       document.addEventListener("DOMContentLoaded", function () {
