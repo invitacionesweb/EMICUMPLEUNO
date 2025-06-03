@@ -267,6 +267,9 @@ main p {
     text-align: center;
     padding: 20px 0;
 }
+.caja p {
+    max-width: 230px;
+}
 .galeria {
     width: 100%;
     display: grid;
